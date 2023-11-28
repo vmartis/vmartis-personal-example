@@ -1,0 +1,9 @@
+logging:
+  level:
+    cz:
+      smartbrains:
+        alfa: DEBUG
+    org:
+      springframework:
+        ws: TRACE
+    root: DEBUG

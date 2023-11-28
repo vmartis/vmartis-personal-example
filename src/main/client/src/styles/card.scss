@@ -1,0 +1,12 @@
+.card-header {
+  font-size: 1.1rem;
+  h5 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .card.print-invisible {
+    border: 0;
+  }
+}

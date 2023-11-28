@@ -1,0 +1,13 @@
+@media print {
+  .tabs.print-invisible {
+    .card-header {
+      display: none;
+    }
+    .tab-content {
+      margin: 0 !important;
+    }
+    .card-body {
+      padding: 0;
+    }
+  }
+}

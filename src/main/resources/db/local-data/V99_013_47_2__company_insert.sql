@@ -1,0 +1,19 @@
+INSERT INTO subject (id, created, active, updated, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id) VALUES (1, '2019-12-14 20:04:48.378644', true, '2019-12-16 10:25:10.578975', 'Bratislava', 'SVK', '4', 'Hlavná ulica', '01101', NULL);
+INSERT INTO subject (id, created, active, updated, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id) VALUES (2, '2019-12-15 16:20:37.688171', true, '2019-12-16 10:20:55.253399', 'Praha – Libeň', 'CZE', '1060/12', 'Lihovarská', '190 00', 7);
+INSERT INTO subject (id, created, active, updated, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id) VALUES (3, '2019-12-15 16:20:37.688171', true, '2019-12-16 10:20:55.253399', 'Liberec', 'CZE', '33/2', 'Bratří Hubertových', '165 04', 6);
+INSERT INTO subject (id, created, active, updated, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id) VALUES (4, '2019-12-15 16:20:37.688171', true, '2019-12-16 10:20:55.253399', 'Košice', 'SVK', '77', 'Štefániková', '081 14', 6);
+
+INSERT INTO company (id, name, company_id, role, vat_id, vat_id_local, defaul_currency, web, for_order) VALUES (1, 'Alfa company s.r.o.', '00001111', 'OWNED', 'SK00001111', 'SK00001111', 'EUR', 'https://www.smartbrains.cz/', false);
+INSERT INTO company (id, name, company_id, role, vat_id, vat_id_local, defaul_currency, web, for_order) VALUES (2, 'Bufet s.r.o.', '01010101', 'PARTNER', 'CZ01010101', NULL, NULL, 'https://www.bufet-s-r-o.com/', false);
+INSERT INTO company (id, name, company_id, role, vat_id, vat_id_local, defaul_currency, web, for_order) VALUES (3, 'Obchod ABC', '98798700', 'PARTNER', 'CZ98798700', NULL, NULL, 'https://www.obchod-abc-x.com/', true);
+INSERT INTO company (id, name, company_id, role, vat_id, vat_id_local, defaul_currency, web, for_order) VALUES (4, 'Korunka obchod', '02020202', 'PARTNER', 'SK0202020', NULL, NULL, 'https://www.obchod-korunka-x.com/', true);
+
+INSERT INTO company_branch (id, name, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id, company_id, created, active, item_order, for_order)  VALUES (1, 'Ružinovská BA', 'Bratislava', 'SVK', ' 11a', 'Ružinovská', '01102', 4, 1, current_timestamp, true, 1, false);
+INSERT INTO company_branch (id, name, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id, company_id, created, active, item_order, for_order) VALUES (2, 'Bratislavská Brno', 'Brno', 'CZE', '412', 'Bratislavská', '60200', 3, 2, current_timestamp, true, 2, true);
+INSERT INTO company_branch (id, name, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id, company_id, created, active, item_order, for_order) VALUES (3, 'Olomoucká Brno', 'Brno', 'CZE', '98/5a', 'Olomoucká', '62599', 3, 2, current_timestamp, true, 3, true);
+INSERT INTO company_branch (id, name, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id, company_id, created, active, item_order, for_order) VALUES (4, 'Vedlejší Liberec', 'Liberec', 'CZE', '654/12', 'Vedlejší', '65565', 6, 3, current_timestamp, true, 4, false);
+INSERT INTO company_branch (id, name, address_city, address_country, address_house_number, address_street_name, address_zip_code, address_region_id, company_id, created, active, item_order, for_order) VALUES (5, 'Južná trieda Košice', 'Košice', 'SVK', '18', 'Južná trieda', '081 15', 6, 3, current_timestamp, true, 5, false);
+
+SELECT pg_catalog.setval('subject_id_seq', 4, true);
+SELECT pg_catalog.setval('company_id_seq', 4, true);
+SELECT pg_catalog.setval('company_branch_id_seq', 5, true);

@@ -1,0 +1,71 @@
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
+textarea.note {
+  height: 107px;
+}
+
+.note-big {
+  textarea {
+    height: 250px;
+  }
+}
+
+input[type="number"] {
+  text-align: right;
+}
+
+/**
+Checkbox in form
+ */
+.checkbox-middle {
+  margin-top: 33px;
+}
+
+
+.static-field {
+  display: block;
+  line-height: 2.97em;
+  &.compact {
+    line-height: 1.5;
+  }
+}
+
+.form-control {
+  &::placeholder {
+    font-size: $font-size-base;
+  }
+}
+
+.form-group {
+  label.col-form-label {
+    font-weight: normal;
+    color: $gray-600;
+
+    &.required {
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.form-text {
+  margin-top: 2.25rem;
+}
+
+.input-group-prepend {
+  margin-right: 0;
+}
+
+.form-compact {
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+// remove exclamation icon
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  border-color: #dc3545;
+  padding-right: $input-padding-x;
+  background: none;
+}

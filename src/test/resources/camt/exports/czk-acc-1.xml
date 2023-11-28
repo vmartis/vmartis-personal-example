@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02">
+    <BkToCstmrStmt>
+        <GrpHdr>
+            <MsgId>camt.053-2019-12-31-012</MsgId>
+            <CreDtTm>2020-01-12T10:36:35.351+01:00</CreDtTm>
+            <MsgRcpt>
+                <Nm>Martiš, Viktor</Nm>
+                <PstlAdr>
+                    <StrtNm>Hloža 1311/149</StrtNm>
+                    <PstCd>01861</PstCd>
+                    <TwnNm>Beluša - Hloža</TwnNm>
+                    <Ctry>SK</Ctry>
+                </PstlAdr>
+                <Id>
+                    <PrvtId>
+                        <Othr>
+                            <Id>Martiš, Viktor</Id>
+                        </Othr>
+                    </PrvtId>
+                </Id>
+            </MsgRcpt>
+            <MsgPgntn>
+                <PgNb>1</PgNb>
+                <LastPgInd>true</LastPgInd>
+            </MsgPgntn>
+            <AddtlInf>Měsíční</AddtlInf>
+        </GrpHdr>
+        <Stmt>
+            <Id>CZ6720100000002000718361-2019-12-31</Id>
+            <ElctrncSeqNb>12</ElctrncSeqNb>
+            <LglSeqNb>12</LglSeqNb>
+            <CreDtTm>2020-01-12T10:36:35.351+01:00</CreDtTm>
+            <FrToDt>
+                <FrDtTm>2019-12-01T00:00:00.000+01:00</FrDtTm>
+                <ToDtTm>2019-12-31T23:59:59.999+01:00</ToDtTm>
+            </FrToDt>
+            <Acct>
+                <Id>
+                    <IBAN>CZ6720100000002000718361</IBAN>
+                </Id>
+                <Tp>
+                    <Cd>CASH</Cd>
+                </Tp>
+                <Ccy>CZK</Ccy>
+                <Nm>Martiš, Viktor</Nm>
+                <Ownr>
+                    <Nm>Martiš, Viktor</Nm>
+                    <PstlAdr>
+                        <StrtNm>Hloža 1311/149</StrtNm>
+                        <PstCd>01861</PstCd>
+                        <TwnNm>Beluša - Hloža</TwnNm>
+                        <Ctry>SK</Ctry>
+                    </PstlAdr>
+                    <Id>
+                        <PrvtId>
+                            <Othr>
+                                <Id>Martiš, Viktor</Id>
+                            </Othr>
+                        </PrvtId>
+                    </Id>
+                </Ownr>
+                <Svcr>
+                    <FinInstnId>
+                        <BIC>FIOBCZPPXXX</BIC>
+                        <Nm>FIOBCZPP</Nm>
+                        <PstlAdr>
+                            <StrtNm>V Celnici 1028/10</StrtNm>
+                            <TwnNm>117 21 Praha 1</TwnNm>
+                            <Ctry>CZ</Ctry>
+                        </PstlAdr>
+                        <Othr>
+                            <Id>2010</Id>
+                        </Othr>
+                    </FinInstnId>
+                </Svcr>
+            </Acct>
+            <Intrst>
+                <Rate>
+                    <Tp>
+                        <Pctg>0.00</Pctg>
+                    </Tp>
+                </Rate>
+            </Intrst>
+            <Bal>
+                <Tp>
+                    <CdOrPrtry>
+                        <Cd>PRCD</Cd>
+                    </CdOrPrtry>
+                </Tp>
+                <Amt Ccy="CZK">108272.40</Amt>
+                <CdtDbtInd>CRDT</CdtDbtInd>
+                <Dt>
+                    <Dt>2019-12-01</Dt>
+                </Dt>
+            </Bal>
+            <Bal>
+                <Tp>
+                    <CdOrPrtry>
+                        <Cd>CLBD</Cd>
+                    </CdOrPrtry>
+                </Tp>
+                <Amt Ccy="CZK">227272.40</Amt>
+                <CdtDbtInd>CRDT</CdtDbtInd>
+                <Dt>
+                    <Dt>2019-12-31</Dt>
+                </Dt>
+            </Bal>
+            <TxsSummry>
+                <TtlNtries>
+                    <NbOfNtries>4</NbOfNtries>
+                    <Sum>212200.00</Sum>
+                    <TtlNetNtryAmt>119000.00</TtlNetNtryAmt>
+                    <CdtDbtInd>CRDT</CdtDbtInd>
+                </TtlNtries>
+                <TtlCdtNtries>
+                    <NbOfNtries>2</NbOfNtries>
+                    <Sum>165600.00</Sum>
+                </TtlCdtNtries>
+                <TtlDbtNtries>
+                    <NbOfNtries>2</NbOfNtries>
+                    <Sum>46600.00</Sum>
+                </TtlDbtNtries>
+            </TxsSummry>
+            <Ntry>
+                <NtryRef>21995015645</NtryRef>
+                <Amt Ccy="CZK">82400.00</Amt>
+                <CdtDbtInd>CRDT</CdtDbtInd>
+                <RvslInd>false</RvslInd>
+                <Sts>BOOK</Sts>
+                <BookgDt>
+                    <Dt>2019-12-13</Dt>
+                </BookgDt>
+                <ValDt>
+                    <Dt>2019-12-13</Dt>
+                </ValDt>
+                <BkTxCd>
+                    <Prtry>
+                        <Cd>10000107000</Cd>
+                        <Issr>Czech Banking Association</Issr>
+                    </Prtry>
+                </BkTxCd>
+                <NtryDtls>
+                    <TxDtls>
+                        <Refs>
+                            <MsgId>21995015645</MsgId>
+                            <InstrId>KS0308</InstrId>
+                            <EndToEndId>VS100112019</EndToEndId>
+                        </Refs>
+                        <BkTxCd>
+                            <Prtry>
+                                <Cd>10000107000</Cd>
+                                <Issr>Czech Banking Association</Issr>
+                            </Prtry>
+                        </BkTxCd>
+                        <RltdPties>
+                            <DbtrAcct>
+                                <Id>
+                                    <Othr>
+                                        <Id>279293735</Id>
+                                    </Othr>
+                                </Id>
+                            </DbtrAcct>
+                        </RltdPties>
+                        <RltdAgts>
+                            <DbtrAgt>
+                                <FinInstnId>
+                                    <Othr>
+                                        <Id>0300</Id>
+                                    </Othr>
+                                </FinInstnId>
+                            </DbtrAgt>
+                        </RltdAgts>
+                        <RmtInf>
+                            <Ustrd>Viktor Martis - vyvoj LifeRay</Ustrd>
+                        </RmtInf>
+                        <AddtlTxInf>LOMAN COMPANY , S.R.</AddtlTxInf>
+                    </TxDtls>
+                </NtryDtls>
+            </Ntry>
+            <Ntry>
+                <NtryRef>21996341517</NtryRef>
+                <Amt Ccy="CZK">18600.00</Amt>
+                <CdtDbtInd>DBIT</CdtDbtInd>
+                <RvslInd>false</RvslInd>
+                <Sts>BOOK</Sts>
+                <BookgDt>
+                    <Dt>2019-12-15</Dt>
+                </BookgDt>
+                <ValDt>
+                    <Dt>2019-12-15</Dt>
+                </ValDt>
+                <BkTxCd>
+                    <Prtry>
+                        <Cd>10000101000</Cd>
+                        <Issr>Czech Banking Association</Issr>
+                    </Prtry>
+                </BkTxCd>
+                <NtryDtls>
+                    <TxDtls>
+                        <Refs>
+                            <MsgId>21996341517</MsgId>
+                        </Refs>
+                        <BkTxCd>
+                            <Prtry>
+                                <Cd>10000101000</Cd>
+                                <Issr>Czech Banking Association</Issr>
+                            </Prtry>
+                        </BkTxCd>
+                        <RltdPties>
+                            <CdtrAcct>
+                                <Id>
+                                    <Othr>
+                                        <Id>2110886710</Id>
+                                    </Othr>
+                                </Id>
+                            </CdtrAcct>
+                        </RltdPties>
+                        <RltdAgts>
+                            <CdtrAgt>
+                                <FinInstnId>
+                                    <Othr>
+                                        <Id>2700</Id>
+                                    </Othr>
+                                </FinInstnId>
+                            </CdtrAgt>
+                        </RltdAgts>
+                        <RmtInf>
+                            <Ustrd>Unicredit Bank CZK konto</Ustrd>
+                        </RmtInf>
+                        <AddtlTxInf>Unicredit Bank CZK konto</AddtlTxInf>
+                    </TxDtls>
+                </NtryDtls>
+            </Ntry>
+            <Ntry>
+                <NtryRef>22000925089</NtryRef>
+                <Amt Ccy="CZK">28000.00</Amt>
+                <CdtDbtInd>DBIT</CdtDbtInd>
+                <RvslInd>false</RvslInd>
+                <Sts>BOOK</Sts>
+                <BookgDt>
+                    <Dt>2019-12-19</Dt>
+                </BookgDt>
+                <ValDt>
+                    <Dt>2019-12-19</Dt>
+                </ValDt>
+                <BkTxCd>
+                    <Prtry>
+                        <Cd>10000101000</Cd>
+                        <Issr>Czech Banking Association</Issr>
+                    </Prtry>
+                </BkTxCd>
+                <NtryDtls>
+                    <TxDtls>
+                        <Refs>
+                            <MsgId>22000925089</MsgId>
+                            <InstrId>KS1148</InstrId>
+                            <EndToEndId>VS8603128303</EndToEndId>
+                        </Refs>
+                        <BkTxCd>
+                            <Prtry>
+                                <Cd>10000101000</Cd>
+                                <Issr>Czech Banking Association</Issr>
+                            </Prtry>
+                        </BkTxCd>
+                        <RltdPties>
+                            <CdtrAcct>
+                                <Id>
+                                    <Othr>
+                                        <Id>000721-0077628621</Id>
+                                    </Othr>
+                                </Id>
+                            </CdtrAcct>
+                        </RltdPties>
+                        <RltdAgts>
+                            <CdtrAgt>
+                                <FinInstnId>
+                                    <Othr>
+                                        <Id>0710</Id>
+                                    </Othr>
+                                </FinInstnId>
+                            </CdtrAgt>
+                        </RltdAgts>
+                        <RmtInf>
+                            <Ustrd>Dan z prijmu Viktor Martis 8603128303</Ustrd>
+                        </RmtInf>
+                        <AddtlTxInf>FU Jihomoravsky kraj - dan z prijmu - zaloha</AddtlTxInf>
+                    </TxDtls>
+                </NtryDtls>
+            </Ntry>
+            <Ntry>
+                <NtryRef>22007642072</NtryRef>
+                <Amt Ccy="CZK">83200.00</Amt>
+                <CdtDbtInd>CRDT</CdtDbtInd>
+                <RvslInd>false</RvslInd>
+                <Sts>BOOK</Sts>
+                <BookgDt>
+                    <Dt>2019-12-30</Dt>
+                </BookgDt>
+                <ValDt>
+                    <Dt>2019-12-30</Dt>
+                </ValDt>
+                <BkTxCd>
+                    <Prtry>
+                        <Cd>10000107000</Cd>
+                        <Issr>Czech Banking Association</Issr>
+                    </Prtry>
+                </BkTxCd>
+                <NtryDtls>
+                    <TxDtls>
+                        <Refs>
+                            <MsgId>22007642072</MsgId>
+                            <InstrId>KS0308</InstrId>
+                            <EndToEndId>VS100122019</EndToEndId>
+                        </Refs>
+                        <BkTxCd>
+                            <Prtry>
+                                <Cd>10000107000</Cd>
+                                <Issr>Czech Banking Association</Issr>
+                            </Prtry>
+                        </BkTxCd>
+                        <RltdPties>
+                            <DbtrAcct>
+                                <Id>
+                                    <Othr>
+                                        <Id>279293735</Id>
+                                    </Othr>
+                                </Id>
+                            </DbtrAcct>
+                        </RltdPties>
+                        <RltdAgts>
+                            <DbtrAgt>
+                                <FinInstnId>
+                                    <Othr>
+                                        <Id>0300</Id>
+                                    </Othr>
+                                </FinInstnId>
+                            </DbtrAgt>
+                        </RltdAgts>
+                        <RmtInf>
+                            <Ustrd>Viktor Martis - vyvoj LifeRay</Ustrd>
+                        </RmtInf>
+                        <AddtlTxInf>LOMAN COMPANY , S.R.</AddtlTxInf>
+                    </TxDtls>
+                </NtryDtls>
+            </Ntry>
+        </Stmt>
+    </BkToCstmrStmt>
+</Document>

@@ -1,0 +1,45 @@
+.brand-link {
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.sidebar-logo {
+  height: 29px;
+}
+
+.logo-mini {
+  display: none;
+}
+
+.sidebar-collapse {
+  & .user-panel, & .logo-lg {
+    display: none;
+  }
+  & .logo-mini {
+    display: block;
+  }
+}
+
+[class*='sidebar-dark-'] {
+  .user-panel {
+    color: $sidebar-dark-color;
+  }
+
+  // Sidebar Menu. First level links
+  .nav-sidebar > .nav-item {
+
+    background-color: $sidebar-dark-hover-bg;
+    color: $sidebar-dark-hover-color;
+
+    &:not(.menu-open) {
+      background-color: $sidebar-dark-bg;
+      color: $sidebar-dark-color;
+    }
+
+    // second level links
+    .nav-treeview .nav-link {
+      padding-left: 45px;
+    }
+  }
+}

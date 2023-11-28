@@ -1,0 +1,2 @@
+DROP SCHEMA IF EXISTS "alfa-test" CASCADE;
+CREATE SCHEMA "alfa-test";

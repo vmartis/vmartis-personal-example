@@ -1,0 +1,100 @@
+@import "~bootstrap/scss/variables";
+
+.inactive {
+  color: $text-muted;
+  text-decoration: line-through;
+}
+
+/**
+Place button to right bottom corner of parent element.
+ */
+button.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+tr[role=button] {
+  cursor: pointer;
+}
+
+/**
+Prints text with break lines
+ */
+.formatted-text {
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+//buttons
+.btn-input-line {
+  margin-top: 35px;
+}
+
+//anchor, link
+.link-input-line {
+  i {
+    margin-top: 42px;
+  }
+}
+.link-input-line.no-label {
+  i {
+    margin-top: 4px;
+  }
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+.fa-1p5x {
+  font-size: 1.5rem;
+}
+
+:focus {
+  outline: none;
+}
+
+label {
+  &.btn {
+    font-weight: $btn-font-weight !important;
+ }
+}
+
+.text-gray-400 {
+  color: $gray-400;
+}
+
+.check-icon {
+  color: $gray-400;
+  &:hover {
+    color: $gray-600;
+  }
+  &.selected {
+    color: $success;
+  }
+}
+
+.check-all-icon {
+  &:hover {
+    color: $gray-400;
+  }
+  &.selected {
+    color: $success;
+  }
+}
+
+// fix https://github.com/bootstrap-vue/bootstrap-vue/issues/1732#issuecomment-381381818
+.tooltip {
+  top: 0;
+}
+
+dt {
+  color: $gray-600;
+}
+
+.text-pre-wrap {
+  white-space: pre-wrap;
+}

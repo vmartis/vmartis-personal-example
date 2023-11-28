@@ -1,0 +1,33 @@
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+      hibernate:
+        SQL: DEBUG
+#        type:
+#          descriptor:
+#            sql:
+#              BasicBinder: TRACE
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+#    initialization-mode: always
+    password: alfa
+    url: jdbc:postgresql://localhost/alfa
+    username: alfa
+  jmx:
+    enabled: false
+  flyway:
+    locations: classpath:db/migration,classpath:db/local-schema,classpath:db/local-data
+  jpa:
+    hibernate:
+#        ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+management:
+  endpoints:
+    enabled-by-default: false

@@ -1,0 +1,49 @@
+logging:
+  level:
+    cz:
+      smartbrains:
+        alfa: DEBUG
+    root: INFO
+security:
+  oauth2:
+    client:
+      access-token-validity-seconds: 43200
+      authorized-grant-types: password,refresh_token
+      client-id: 
+      client-secret: 
+      refresh-token-validity-seconds: 43200
+      scope: read,write
+spring:
+  flyway:
+    schemas: alfa
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default_schema: alfa
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  resources:
+    chain:
+      strategy:
+        content:
+          enabled: true
+          paths: /**
+        fixed:
+          enabled: true
+          paths: /js/lib/
+          version: v12
+  servlet:
+    multipart:
+      max-file-size: 2MB
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always

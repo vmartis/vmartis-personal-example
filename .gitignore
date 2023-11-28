@@ -1,0 +1,14 @@
+.gradle
+/out
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+node_modulesbr
+**/npm-debug.log
+/src/main/client/node_modules

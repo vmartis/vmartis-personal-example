@@ -1,0 +1,14 @@
+$font-size-base: 0.875rem;
+$modal-md: 600px;
+//$form-grid-gutter-width: 5px;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/variables";
+
+$button-default-background-color: $gray-200;
+$vs-component-placeholder-color: $input-placeholder-color;
+$btn-disabled-opacity: 0.4;
+
+$table-hover-color: $table-color;
+$table-hover-bg: rgba($black, .15);

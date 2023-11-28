@@ -1,0 +1,17 @@
+.radio-field {
+  label {
+    cursor: pointer;
+    &.disabled {
+      cursor: not-allowed;
+    }
+  }
+  &.no-label {
+    margin-top: 46px;
+  }
+
+  &.is-invalid {
+    .btn-group label {
+      border-color: theme-color("danger");
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.date-time-picker {
+  .field.is-disabled .field-input {
+    background-color: $input-disabled-bg;
+    cursor: not-allowed;
+  }
+  .field.sm {
+    .field-input {
+      height: $input-height;
+      font-size: $input-font-size;
+      font-family: $input-font-family;
+      color: $input-color;
+    }
+  }
+}
+
+.date-time-picker.is-invalid {
+  .field.sm {
+    .field-input {
+      border-color: theme-color("danger");
+    }
+  }
+}
+
+@media (min-width: 415px) {
+  .datepicker {
+    .shortcuts-container {
+      min-height: 330px;
+    }
+
+    .shortcut-button {
+      padding: 0 12px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               jaxb:version="2.1"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+               jaxb:extensionBindingPrefixes="xjc inheritance">
+
+    <jaxb:globalBindings>
+        <xjc:javaType adapter="cz.smartbrains.qesu.jaxb.LocalDateAdapter"
+                      name="java.time.LocalDate" xmlType="xs:date"/>
+        <xjc:javaType adapter="cz.smartbrains.qesu.jaxb.LocalDateTimeAdapter"
+                      name="java.time.LocalDateTime" xmlType="xs:dateTime"/>
+    </jaxb:globalBindings>
+
+    <jaxb:bindings schemaLocation="./camt.053.001.02.xsd">
+        <jaxb:schemaBindings>
+            <jaxb:package name="org.iso.camt053"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+</jaxb:bindings>

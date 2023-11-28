@@ -1,0 +1,67 @@
+//validation
+.has-error {
+  .v-select {
+    .vs__dropdown-toggle {
+      border-color: theme-color("danger");
+
+      input {
+        border: none;
+      }
+    }
+  }
+}
+
+.v-select {
+  background-color: $white;
+
+  &.vs--disabled {
+    background-color: $input-disabled-bg;
+    cursor: not-allowed;
+
+    .vs__dropdown-toggle {
+      background-color: $input-disabled-bg;
+      cursor: not-allowed;
+    }
+    .vs__search, .vs__open-indicator {
+      cursor: not-allowed;
+      background-color: $input-disabled-bg;
+    }
+    .vs__clear {
+      display: none;
+    }
+  }
+
+  .vs__dropdown-toggle {
+    padding-top: 2px;
+    padding-bottom: 6px;
+
+    // fix overflow of too long names
+    .vs__selected-options {
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      overflow: hidden;
+      .vs__selected {
+        overflow: hidden;
+        span {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  & .vs__search {
+    cursor: pointer;
+  }
+
+  & .vs__search:focus {
+    cursor: text;
+  }
+
+  &.vs--searchable {
+    .vs__dropdown-toggle {
+      cursor: pointer;
+    }
+  }
+}

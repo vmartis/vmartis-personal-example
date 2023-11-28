@@ -1,0 +1,10 @@
+server:
+  port: 5000
+spring:
+  datasource:
+    url: jdbc:postgresql://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}
+    username: ${RDS_USERNAME}
+    password: ${RDS_PASSWORD}
+    initialization-mode: never
+  flyway:
+    locations: classpath:db/migration

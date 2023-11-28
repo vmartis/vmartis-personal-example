@@ -1,0 +1,45 @@
+
+
+@media print {
+  .content-wrapper {
+    background: transparent none;
+  }
+  .print-end-page {
+    page-break-after: always;
+  }
+
+  // fix print problem
+  // https://github.com/twbs/bootstrap/issues/25629
+  @page {
+    size: auto !important
+  }
+
+  body {
+    color: black;
+    font-size: $font-size-lg;
+  }
+
+  .print-box-wrapper {
+    border: 1px $border-color solid;
+    padding: .7rem;
+  }
+
+  dl {
+    dt {
+      margin-bottom: .3rem;
+      font-weight: normal;
+      color: black;
+    }
+    dd {
+      margin-bottom: 0;
+    }
+  }
+
+  #form-modal, .modal-backdrop {
+    display: none !important;
+  }
+
+  .card-body::after {
+    content: unset;
+  }
+}

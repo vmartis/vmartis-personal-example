@@ -1,0 +1,50 @@
+table.table-no-tob-border {
+  th {
+    border-top: 0;
+  }
+}
+
+.table-fixed-first-column {
+  $table-fixed-column-width: 160px;
+
+  overflow-x: scroll;
+  overflow-y: visible;
+  margin-left: $table-fixed-column-width;
+  width: calc(100% - #{$table-fixed-column-width});
+
+  & th:nth-child(1) {
+    position: absolute;
+    width: $table-fixed-column-width;
+    left: 15px;
+    top: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // need to be here because of setting height of th element
+    &:before {
+      content: "\00a0 "
+    }
+  }
+
+   // fix offset bug
+   .table-sm th:nth-child(1) {
+    height: 32px;
+  }
+
+  & td:nth-child(1) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    width: $table-fixed-column-width;
+    left: 15px;
+    top: auto;
+  }
+
+  .table-hover tbody tr:hover th:nth-child(1),
+  .table-hover tbody tr:hover td:nth-child(1)  {
+    color: $table-hover-color;
+    background-color: $table-hover-bg;
+  }
+}
+

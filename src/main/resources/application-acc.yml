@@ -1,0 +1,24 @@
+server:
+  port: 8090
+  address: localhost
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/alfa-acc
+    username: alfa-acc
+    password: alfa-acc
+    initialization-mode: never
+  flyway:
+    locations: classpath:db/migration
+logging:
+  file:
+    name: /var/log/alfa-acc/alfa.log
+
+
+
+
+
+
+
+
+
+

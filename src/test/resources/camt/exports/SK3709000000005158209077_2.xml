@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02">
+    <BkToCstmrStmt>
+        <GrpHdr>
+            <MsgId>GIBASKBX-200212-SEPAXML~22315000</MsgId>
+            <CreDtTm>2020-02-12T23:47:30.0+01:00</CreDtTm>
+            <MsgRcpt>
+                <Nm>REGEM GROUP s.r.o.</Nm>
+                <PstlAdr>
+                    <StrtNm>Male Kosecke Podhradie 209</StrtNm>
+                    <PstCd>01831</PstCd>
+                    <TwnNm>Kosecke Podhradie</TwnNm>
+                    <Ctry>SK</Ctry>
+                </PstlAdr>
+                <Id>
+                    <OrgId>
+                        <Othr>
+                            <Id>REGEM GROUP s.r.o.</Id>
+                        </Othr>
+                    </OrgId>
+                </Id>
+            </MsgRcpt>
+        </GrpHdr>
+        <Stmt>
+            <Id>SK3709000000005158209077-2020-02-12</Id>
+            <ElctrncSeqNb>2</ElctrncSeqNb>
+            <LglSeqNb>2</LglSeqNb>
+            <CreDtTm>2020-02-12T23:47:30.0+01:00</CreDtTm>
+            <FrToDt>
+                <FrDtTm>2020-02-11T00:00:00.0+01:00</FrDtTm>
+                <ToDtTm>2020-02-12T23:59:59.0+01:00</ToDtTm>
+            </FrToDt>
+            <Acct>
+                <Id>
+                    <IBAN>SK3709000000005158209077</IBAN>
+                </Id>
+                <Ccy>EUR</Ccy>
+                <Nm>REGEM GROUP s.r.o.</Nm>
+                <Ownr>
+                    <Nm>REGEM GROUP s.r.o.</Nm>
+                    <PstlAdr>
+                        <StrtNm>Male Kosecke Podhradie 209</StrtNm>
+                        <PstCd>01831</PstCd>
+                        <TwnNm>Kosecke Podhradie</TwnNm>
+                        <Ctry>SK</Ctry>
+                    </PstlAdr>
+                    <Id>
+                        <OrgId>
+                            <Othr>
+                                <Id>REGEM GROUP s.r.o.</Id>
+                            </Othr>
+                        </OrgId>
+                    </Id>
+                </Ownr>
+                <Svcr>
+                    <FinInstnId>
+                        <BIC>GIBASKBX</BIC>
+                        <Nm>Slovenska sporitelna, a.s.</Nm>
+                        <PstlAdr>
+                            <StrtNm>Tomasikova</StrtNm>
+                            <BldgNb>48</BldgNb>
+                            <PstCd>83237</PstCd>
+                            <TwnNm>Bratislava</TwnNm>
+                            <Ctry>SK</Ctry>
+                        </PstlAdr>
+                        <Othr>
+                            <Id>0900</Id>
+                        </Othr>
+                    </FinInstnId>
+                </Svcr>
+            </Acct>
+            <Bal>
+                <Tp>
+                    <CdOrPrtry>
+                        <Cd>PRCD</Cd>
+                    </CdOrPrtry>
+                </Tp>
+                <Amt Ccy="EUR">3504.98</Amt>
+                <CdtDbtInd>CRDT</CdtDbtInd>
+                <Dt>
+                    <Dt>2020-02-11</Dt>
+                </Dt>
+            </Bal>
+            <Bal>
+                <Tp>
+                    <CdOrPrtry>
+                        <Cd>CLBD</Cd>
+                    </CdOrPrtry>
+                </Tp>
+                <Amt Ccy="EUR">3474.38</Amt>
+                <CdtDbtInd>CRDT</CdtDbtInd>
+                <Dt>
+                    <Dt>2020-02-12</Dt>
+                </Dt>
+            </Bal>
+            <Bal>
+                <Tp>
+                    <CdOrPrtry>
+                        <Cd>CLAV</Cd>
+                    </CdOrPrtry>
+                </Tp>
+                <CdtLine>
+                    <Incl>true</Incl>
+                    <Amt Ccy="EUR">0</Amt>
+                </CdtLine>
+                <Amt Ccy="EUR">3474.38</Amt>
+                <CdtDbtInd>CRDT</CdtDbtInd>
+                <Dt>
+                    <Dt>2020-02-12</Dt>
+                </Dt>
+            </Bal>
+            <TxsSummry>
+                <TtlNtries>
+                    <NbOfNtries>2</NbOfNtries>
+                    <Sum>30.6</Sum>
+                    <TtlNetNtryAmt>30.6</TtlNetNtryAmt>
+                    <CdtDbtInd>DBIT</CdtDbtInd>
+                </TtlNtries>
+                <TtlCdtNtries>
+                    <NbOfNtries>0</NbOfNtries>
+                    <Sum>0</Sum>
+                </TtlCdtNtries>
+                <TtlDbtNtries>
+                    <NbOfNtries>2</NbOfNtries>
+                    <Sum>30.6</Sum>
+                </TtlDbtNtries>
+            </TxsSummry>
+            <Ntry>
+                <Amt Ccy="EUR">15.3</Amt>
+                <CdtDbtInd>DBIT</CdtDbtInd>
+                <RvslInd>false</RvslInd>
+                <Sts>BOOK</Sts>
+                <BookgDt>
+                    <Dt>2020-02-12</Dt>
+                </BookgDt>
+                <ValDt>
+                    <Dt>2020-02-12</Dt>
+                </ValDt>
+                <BkTxCd>
+                    <Prtry>
+                        <Cd>10000401000</Cd>
+                        <Issr>SBA</Issr>
+                    </Prtry>
+                </BkTxCd>
+                <NtryDtls>
+                    <TxDtls>
+                        <Refs>
+                            <AcctSvcrRef>F001120220205856978</AcctSvcrRef>
+                            <EndToEndId>/VS2008001/SS/KS</EndToEndId>
+                        </Refs>
+                        <BkTxCd>
+                            <Prtry>
+                                <Cd>10000401000</Cd>
+                                <Issr>SBA</Issr>
+                            </Prtry>
+                        </BkTxCd>
+                        <RltdPties>
+                            <DbtrAcct>
+                                <Id>
+                                    <IBAN>SK3709000000005158209077</IBAN>
+                                </Id>
+                                <Nm>REGEM GROUP s.r.o.</Nm>
+                            </DbtrAcct>
+                            <CdtrAcct>
+                                <Id>
+                                    <IBAN>SK2711000000002625068338</IBAN>
+                                </Id>
+                                <Nm>BOHM RASTISLAV - KON</Nm>
+                            </CdtrAcct>
+                        </RltdPties>
+                        <RltdAgts>
+                            <DbtrAgt>
+                                <FinInstnId>
+                                    <BIC>GIBASKBX</BIC>
+                                </FinInstnId>
+                            </DbtrAgt>
+                            <CdtrAgt>
+                                <FinInstnId>
+                                    <BIC>TATRSKBX</BIC>
+                                </FinInstnId>
+                            </CdtrAgt>
+                        </RltdAgts>
+                        <RmtInf>
+                            <Ustrd>najom NDCA</Ustrd>
+                        </RmtInf>
+                    </TxDtls>
+                </NtryDtls>
+            </Ntry>
+            <Ntry>
+                <Amt Ccy="EUR">15.3</Amt>
+                <CdtDbtInd>DBIT</CdtDbtInd>
+                <RvslInd>false</RvslInd>
+                <Sts>BOOK</Sts>
+                <BookgDt>
+                    <Dt>2020-02-12</Dt>
+                </BookgDt>
+                <ValDt>
+                    <Dt>2020-02-12</Dt>
+                </ValDt>
+                <BkTxCd>
+                    <Prtry>
+                        <Cd>10000401000</Cd>
+                        <Issr>SBA</Issr>
+                    </Prtry>
+                </BkTxCd>
+                <NtryDtls>
+                    <TxDtls>
+                        <Refs>
+                            <AcctSvcrRef>F001120220205857145</AcctSvcrRef>
+                            <EndToEndId>/VS2008002/SS/KS</EndToEndId>
+                        </Refs>
+                        <BkTxCd>
+                            <Prtry>
+                                <Cd>10000401000</Cd>
+                                <Issr>SBA</Issr>
+                            </Prtry>
+                        </BkTxCd>
+                        <RltdPties>
+                            <DbtrAcct>
+                                <Id>
+                                    <IBAN>SK3709000000005158209077</IBAN>
+                                </Id>
+                                <Nm>REGEM GROUP s.r.o.</Nm>
+                            </DbtrAcct>
+                            <CdtrAcct>
+                                <Id>
+                                    <IBAN>SK2711000000002625068338</IBAN>
+                                </Id>
+                                <Nm>BOHM RASTISLAV - KON</Nm>
+                            </CdtrAcct>
+                        </RltdPties>
+                        <RltdAgts>
+                            <DbtrAgt>
+                                <FinInstnId>
+                                    <BIC>GIBASKBX</BIC>
+                                </FinInstnId>
+                            </DbtrAgt>
+                            <CdtrAgt>
+                                <FinInstnId>
+                                    <BIC>TATRSKBX</BIC>
+                                </FinInstnId>
+                            </CdtrAgt>
+                        </RltdAgts>
+                        <RmtInf>
+                            <Ustrd>najom NDCA</Ustrd>
+                        </RmtInf>
+                    </TxDtls>
+                </NtryDtls>
+            </Ntry>
+        </Stmt>
+    </BkToCstmrStmt>
+</Document>
